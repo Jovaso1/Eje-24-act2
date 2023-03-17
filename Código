@@ -1,0 +1,26 @@
+package eje.pkg24.act2;
+import java.util.Scanner;
+public class Eje24Act2 {
+
+    public static void main(String[] args) {
+        double A, B, C;
+        Scanner teclado = new Scanner(System.in);
+        System.out.print("Esfera A: ");
+        A = teclado.nextDouble();
+        
+        System.out.print("Esfera B: ");
+        B = teclado.nextDouble();
+        
+        System.out.print("Esfera C: ");
+        C = teclado.nextDouble();
+        if (A > B && A > C){
+            System.out.println("La esfera de mayor peso es la A");
+        } else if (B > A && B > C){
+            System.out.println("La esfera de mayor peso es la B");
+        }else {
+            System.out.println("La esfera de mayor peso es la C");
+        } 
+        
+    }
+    
+}
